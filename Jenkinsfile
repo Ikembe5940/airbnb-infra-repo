@@ -57,7 +57,7 @@ pipeline {
     
     post { 
         always { 
-            echo 'Nobi you go tell me wetin to do!'
+            echo 'A down payment for a roasted corn!'
             slackSend channel: '#jenkins', color: COLOR_MAP[currentBuild.currentResult], message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
         }
         }    
